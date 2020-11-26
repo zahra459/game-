@@ -1,0 +1,48 @@
+#!/usr/bin/python
+#shabih sazi bazi sang kaghaz gheichi
+import random
+print ("Hello And  welcome " )
+ready= input("Are you ready?")
+while (True):
+        if ready=="YES" or "yes":
+                print("what's your choice?"+"\n"+"Sang --> Enter: 1"+"\n"+"Kaghaz --> Enter: 2" + "\n"+"Gheichi --> Enter: 3")
+                choice=int(input("Enter Here: -->"))
+                if choice in [1,2,3]:
+                        print("Computer is coming")
+                        computer_choice=random.randint(1,4)
+                        print("##### Compute choice is : -->"+str(computer_choice))
+                        if choice==computer_choice :
+                                print("oh"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice==1 and computer_choice==2:
+                                print("Compter Win"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice==1 and computer_choice==3:
+                                print("Congradulation"+ "\n" + "You Win"+"\n"+"************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice==2 and computer_choice==1:
+                                print( "Computer Win"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice==2 and computer_choice==3:
+                                print( "Computer Win"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice==3 and computer_choice==1:
+                                print( "Computer Win"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                        if choice ==3 and computer_choice==2:
+                                print("Congradulation"+ "\n" + "You Win"+"\n"+"*************************************************")
+                                print("if you want to finish game please enter exit()")
+
+                else:
+                        exit()
+
+
+
+
+
